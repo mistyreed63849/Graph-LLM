@@ -3,8 +3,8 @@
 This is the implementation for the paper **GraphLLM: Boosting Graph Reasoning Ability of Large Language Model**.
 
 ## Setup
-- You may need a single 80G GPU to run the experiment.
-- setup up a new conda env and install necessary packages.
+- You may need a single 80G GPU to run the experiment. We experiment on CUDA 11.8 and torch 2.0.1.
+- Setup up a new conda env and install necessary packages.
 ```
 conda create -n graph_llm python=3.10 -y
 pip install -r requirements.txt
@@ -17,7 +17,7 @@ ln -s /folder/of/LLaMA-2-7B/tokenizer ./Llama-2-7b-hf
 ```
 - Remember to replace the directory `/folder/of/LLaMA-2-7B/checkpoint` and `/folder/of/LLaMA-2-7B/tokenizer` with actual directories!
 - The four graph reasoning datasets are [available](https://drive.google.com/file/d/1fRXdCMHpkb1-kuzcxgZPKkILEWBSbW4M).
-You may download it and place the zip file in the directory of this repository. And then run the command
+You may download it and place the zip file in the directory of this repository. And then run the command:
 ```markdown
 unzip dataset.zip -d ./dataset
 ```

@@ -64,7 +64,6 @@ def parse_args_llama():
 
     parser.add_argument("--project", type=str, default="project_GraphLLM")
     parser.add_argument("--exp_num", type=int, default=1)
-    # parser.add_argument("--tokenizer_path", type=str, default='Llama-2-7b-hf')
     parser.add_argument("--model_name", type=str, default='LLaMA-7B-2')
 
     parser.add_argument("--dataset", type=str, default='mol')
@@ -72,9 +71,7 @@ def parse_args_llama():
     parser.add_argument("--wd", type=float, default=0.1)
 
 
-    # parser.add_argument("--num_hops", type=int, default=3)
     parser.add_argument("--adapter_len", type=int, default=5)
-    # parser.add_argument("--adapter_layer", type=int, default=16)
     parser.add_argument("--adapter_dim", type=int, default=768)
     parser.add_argument("--adapter_n_heads", type=int, default=6)
 
@@ -94,19 +91,11 @@ def parse_args_llama():
 
 
     parser.add_argument("--warmup_epochs", type=float, default=1)
-    # parser.add_argument("--min_lr", type=float, default=5e-6)
-
-    # ParaEff Tuning
-    # parser.add_argument("--w_adapter", default=False, action='store_true')
-    # parser.add_argument("--w_lora", default=False, action='store_true')
-    # parser.add_argument("--lora_alpha", type=int, default=16)
-    # parser.add_argument("--lora_r", type=int, default=8)
 
     # RRWP
     parser.add_argument("--rrwp", type=int, default=8)
 
     # Inference
-    # parser.add_argument("--max_new_tokens", type=int, default=5)
     parser.add_argument("--eval_batch_size", type=int, default=32)
 
     args = parser.parse_args()
