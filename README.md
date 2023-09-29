@@ -23,7 +23,7 @@ unzip dataset.zip -d ./dataset
 ```
 ## Get Start
 
-Train and evaluate the model with default settings on graph reasoning datasets:
+Train and evaluate the model with default settings on graph reasoning datasets on GPU 0:
 
 1. Substructure Counting
 ```markdown
