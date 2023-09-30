@@ -282,7 +282,6 @@ def main(args, SEED):
 
     # Step 5. Evaluating
 
-    torch.save(best_model.state_dict(), f'/data/zwchai/checkpoints/{args.model_name}_{args.dataset}.pth')
 
     model, test_loader = accelerator.prepare(best_model, test_loader)
 
