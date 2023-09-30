@@ -12,7 +12,7 @@ pip install -r requirements.txt
 - To run the code, you need the checkpoint and tokenizer of LLaMA-2-7B, which you can access at [Meta](https://ai.meta.com/resources/models-and-libraries/llama-downloads/).
 After downloading LLaMA-2-7B, soft link the checkpoint folder and the tokenizer folder to the folder of this repository:
 ```markdown
-ln -s /folder/of/LLaMA-2-7B/checkpoint ./LLaMA-2-7B
+ln -s /folder/of/LLaMA-2-7B/checkpoint ./LLaMA-7B-2
 ln -s /folder/of/LLaMA-2-7B/tokenizer ./Llama-2-7b-hf
 ```
 - Remember to replace the directory `/folder/of/LLaMA-2-7B/checkpoint` and `/folder/of/LLaMA-2-7B/tokenizer` with actual directories!
