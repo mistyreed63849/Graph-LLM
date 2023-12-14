@@ -21,7 +21,7 @@ You may download it and place the zip file in the directory of this repository. 
     ```bash
     unzip dataset.zip -d ./dataset
     ```
-- The direction structure should be:
+- The directory structure should be:
     ```
     .
     |- LLaMA-7B-2
@@ -65,9 +65,9 @@ Hyperparameter explanation:
 - `--n_encoder_layers` number of transformer layers of textual encoder
 - `--n_decoder_layers` number of transformer layers of textual decoder
 - `--n_mp_layers` number of graph transformer layers
-- `--adapter_dim` hidden dimention
+- `--adapter_dim` hidden dimension of textual encoder/decoder and graph transformer
 - `--adapter_len` number of prefix tokens per LLM layer
-- `--rrwp` positional encoding dimention
+- `--rrwp` graph positional encoding dimension
 - `--batch_size` batch size in memory during training
 - `--grad_steps` grad_step $\times$ batch_size = batch size for optimization
 - `--lr` the learning rate
