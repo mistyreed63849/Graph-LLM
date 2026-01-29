@@ -16,7 +16,7 @@ After downloading LLaMA-2-7B, soft link the checkpoint folder and the tokenizer 
     ln -s /folder/of/LLaMA-2-7B/tokenizer ./Llama-2-7b-hf
     ```
 - Remember to replace the directory `/folder/of/LLaMA-2-7B/checkpoint` and `/folder/of/LLaMA-2-7B/tokenizer` with actual directories!
-- The four graph reasoning datasets are [available](https://drive.google.com/file/d/1fRXdCMHpkb1-kuzcxgZPKkILEWBSbW4M).
+- The four graph reasoning datasets are available on [Google Drive](https://drive.google.com/file/d/1fRXdCMHpkb1-kuzcxgZPKkILEWBSbW4M) or [Huggingface](https://huggingface.co/datasets/tianjiezhang/GraphLLM).
 You may download it and place the zip file in the directory of this repository. And then run the command:
     ```bash
     unzip dataset.zip -d ./dataset
@@ -74,3 +74,4 @@ Hyperparameter explanation:
 - `--num_epochs` number of training epochs
 - `--warmup_epochs` number of linear warmup epochs
 - `--wd` weight decay
+
